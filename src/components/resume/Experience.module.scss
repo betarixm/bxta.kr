@@ -1,0 +1,39 @@
+@import "src/styles/style.scss";
+
+.container {
+    * {
+        margin: 0;
+    }
+}
+
+.title {
+    margin-bottom: 0.7rem;
+    h2 {
+        font-size: $text-2xl-font-size;
+        line-height: $text-2xl-line-height;
+        font-weight: 700;
+    }
+    .metadata {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            font-size: $text-base-font-size;
+            line-height: $text-base-line-height;
+            color: $color-text-gray;
+        }
+
+        .role {
+        }
+
+        .period {
+        }
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0.75rem;
+}

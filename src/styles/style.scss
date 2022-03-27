@@ -1,0 +1,67 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.2.2/static/pretendard.css");
+
+$color-primary: rgb(45, 89, 246);
+$color-background: rgb(255, 255, 255);
+$color-background-dim: rgb(250, 250, 250);
+
+$color-text-gray: #86868b;
+
+$padding-xsmall: 5px;
+$padding-small: 10px;
+$padding-medium: 20px;
+$padding-large: 30px;
+
+$margin-small: 10px;
+$margin-medium: 20px;
+$margin-large: 30px;
+
+$content-width: 1140px;
+
+$text-xs-font-size: 0.75rem;
+$text-xs-line-height: 1rem;
+
+$text-sm-font-size: 0.875rem;
+$text-sm-line-height: 1.25rem;
+
+$text-base-font-size: 1rem;
+$text-base-line-height: 1.5rem;
+
+$text-lg-font-size: 1.125rem;
+$text-lg-line-height: 1.75rem;
+
+$text-xl-font-size: 1.25rem;
+$text-xl-line-height: 1.75rem;
+
+$text-2xl-font-size: 1.5rem;
+$text-2xl-line-height: 2rem;
+
+$text-3xl-font-size: 1.875rem;
+$text-3xl-line-height: 2.25rem;
+
+$text-4xl-font-size: 2.25rem;
+$text-4xl-line-height: 2.5rem;
+
+$text-5xl-font-size: 3rem;
+$text-5xl-line-height: 1;
+
+$text-6xl-font-size: 3.75rem;
+$text-6xl-line-height: 1;
+
+$text-7xl-font-size: 4.5rem;
+$text-7xl-line-height: 1;
+
+$text-8xl-font-size: 6rem;
+$text-8xl-line-height: 1;
+
+$text-9xl-font-size: 8rem;
+$text-9xl-line-height: 1;
+
+* {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
+        "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+body {
+    margin: 0;
+}

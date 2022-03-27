@@ -36,7 +36,7 @@ export const Experiences: Experience[] = [
         entries: [
             {
                 title: "Security Audit",
-                tags: [],
+                tags: ["REDACTED"],
                 content:
                     "Simply analyzed the vulnerability of the Sellerhub, contributing to the most vulnerabilities among the team. ",
             },
@@ -77,7 +77,7 @@ export const Experiences: Experience[] = [
         period: [new Date(2022, 2 - 1, 1), null],
         entries: [
             {
-                title: "MOTD: Two-pass Defense Network without Vaccination against Adversarial Example",
+                title: "MOTD: Modular Two-pass Defense Network against Adversarial Example",
                 tags: ["Tensorflow", "Adversarial Attack"],
                 content:
                     "Testing a model that minimizes the perturbations of adversarial attacks by transforming existing studies, including MagNet and SHIELD.",
@@ -119,7 +119,8 @@ export const Experiences: Experience[] = [
                 title: "Infrastructure Maintainer",
                 tags: ["Linux", "RTMP", "React", "Filming"],
                 content:
-                    "Managed not only filming equipment and studios, but also all the equipment of the broadcasting station, including computers and servers. ",
+                    "Managed not only filming equipment and studios, but also all the equipment of the broadcasting station, including computers and servers. " +
+                    "Constructed RTMP-based two-way live broadcasting system for POSTECH-KAIST Science War.",
             },
             {
                 title: "Creator",

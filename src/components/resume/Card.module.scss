@@ -1,0 +1,24 @@
+@import "src/styles/style.scss";
+
+.container {
+    background-color: $color-background-dim;
+    padding: $padding-small;
+    border-radius: $padding-small;
+
+    * {
+        margin: 0;
+        display: flex;
+    }
+}
+
+.title {
+    h3 {
+        font-size: $text-base-font-size;
+        line-height: $text-base-line-height;
+    }
+}
+
+.content {
+    font-size: $text-sm-font-size;
+    color: $color-text-gray;
+}

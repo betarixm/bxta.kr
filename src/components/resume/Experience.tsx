@@ -1,4 +1,5 @@
 import React from "react";
+import * as styles from "./Experience.module.scss";
 
 interface ExperienceProps {
     title: string;
@@ -11,12 +12,12 @@ interface ExperienceState {}
 class Experience extends React.Component<ExperienceProps, ExperienceState> {
     render = () => {
         return (
-            <section>
-                <header>
+            <section className={styles.container}>
+                <header className={styles.title}>
                     <h2>{this.props.title}</h2>
-                    <ul>
-                        <li>{this.props.role}</li>
-                        <li>
+                    <ul className={styles.metadata}>
+                        <li className={styles.role}>{this.props.role}</li>
+                        <li className={styles.period}>
                             {this.props.period
                                 .map((t) =>
                                     t instanceof Date
@@ -30,7 +31,7 @@ class Experience extends React.Component<ExperienceProps, ExperienceState> {
                         </li>
                     </ul>
                 </header>
-                <main>{this.props.children}</main>
+                <main className={styles.content}>{this.props.children}</main>
             </section>
         );
     };

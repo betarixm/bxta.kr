@@ -1,0 +1,44 @@
+@import "src/styles/style.scss";
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: $content-width;
+    padding: $padding-large 0;
+
+    .inner {
+        max-width: 92%;
+    }
+
+    .col {
+    }
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    h1 {
+        padding-top: 2rem;
+        width: 100vw;
+        margin: 0;
+        font-weight: 900;
+    }
+
+    .container {
+        padding-bottom: 0 !important;
+    }
+}
+
+.content {
+}

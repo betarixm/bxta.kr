@@ -1,0 +1,23 @@
+@import "src/styles/style.scss";
+
+.container {
+    margin-bottom: 2rem;
+    * {
+        margin: 0;
+    }
+}
+
+.title {
+    margin-bottom: 0.75rem;
+    h1 {
+        color: $color-primary;
+        font-size: $text-3xl-font-size;
+        font-weight: 800;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1.5rem;
+}
