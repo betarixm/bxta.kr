@@ -1,4 +1,6 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
+
 import Layout from "../components/Layout";
 import { Card, CardList, Category, Entry, Experience } from "../components/resume";
 import {
@@ -30,7 +32,7 @@ class IndexPage extends React.Component<IndexPageProps, IndexPageState> {
             ));
 
         return (
-            <Layout>
+            <Layout title={"Gwon Minjae"}>
                 <header className={styles.title}>
                     <div className={styles.container}>
                         <div className={styles.inner}>

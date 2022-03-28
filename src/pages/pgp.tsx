@@ -9,7 +9,7 @@ interface PubState {}
 class Pgp extends React.Component<PubProps, PubState> {
     render = () => {
         return (
-            <Layout>
+            <Layout title={"PGP Public Key"}>
                 <pre style={{ fontFamily: "monospace" }}>{PgpPublicKey}</pre>
             </Layout>
         );
