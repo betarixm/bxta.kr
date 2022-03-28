@@ -1,34 +1,62 @@
 @import "src/styles/style.scss";
 
 .container {
+    border-bottom: darken($color-background-dim, 3) solid 1px;
+    padding-bottom: 0.75rem;
+
     * {
         margin: 0;
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    @include media(tablet, print) {
+        $content-width: 75%;
+        display: flex;
+        flex-direction: row;
+        .title {
+            &-with-content {
+                width: calc(100% - #{$content-width});
+                padding-right: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        .content {
+            &-with-content {
+                width: $content-width;
+            }
+        }
     }
 }
 
 .title {
     margin-bottom: 0.7rem;
+
     h2 {
         font-size: $text-2xl-font-size;
         line-height: $text-2xl-line-height;
         font-weight: 700;
     }
-    .metadata {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+}
 
-        li {
-            font-size: $text-base-font-size;
-            line-height: $text-base-line-height;
-            color: $color-text-gray;
-        }
+.metadata {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 
-        .role {
-        }
+    li {
+        font-size: $text-base-font-size;
+        line-height: $text-base-line-height;
+        color: $color-text-gray;
+    }
 
-        .period {
-        }
+    .role {
+    }
+
+    .period {
     }
 }
 

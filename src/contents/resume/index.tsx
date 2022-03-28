@@ -91,7 +91,7 @@ export const Experiences: Experience[] = [
         entries: [
             {
                 title: "Hacker",
-                tags: [],
+                tags: ["Web Hacker"],
                 content:
                     "Not only participated in CTF as a member of the hacking team, but also shared knowledge through seminars.",
             },

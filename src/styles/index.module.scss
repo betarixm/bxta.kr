@@ -1,5 +1,8 @@
 @import "src/styles/style.scss";
 
+body {
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -16,9 +19,41 @@
 
     .inner {
         max-width: 92%;
+        @include media(desktop, print) {
+            display: flex;
+            flex-direction: row;
+        }
     }
 
-    .col {
+    @include print {
+        max-width: 100%;
+    }
+}
+
+.col {
+    $main-width: 70%;
+
+    &-main {
+        @include media(desktop, print) {
+            width: $main-width;
+            padding-right: 1rem;
+            margin-right: 1rem;
+            border-right: darken($color-background-dim, 10) solid 1px;
+        }
+
+        @include print {
+            width: 80%;
+        }
+    }
+
+    &-sub {
+        @include media(desktop, print) {
+            width: calc(100% - #{$main-width} - 2rem);
+        }
+
+        @include print {
+            width: 20%;
+        }
     }
 }
 

@@ -1,5 +1,12 @@
+@import "src/styles/style";
+
 .container {
     display: flex;
     flex-direction: column;
     grid-gap: 0.5rem;
+
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }

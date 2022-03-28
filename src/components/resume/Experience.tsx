@@ -11,9 +11,11 @@ interface ExperienceState {}
 
 class Experience extends React.Component<ExperienceProps, ExperienceState> {
     render = () => {
+        const withContent: boolean = React.Children.count(this.props.children) > 0;
+
         return (
             <section className={styles.container}>
-                <header className={styles.title}>
+                <header className={withContent ? styles.titleWithContent : styles.content}>
                     <h2>{this.props.title}</h2>
                     <ul className={styles.metadata}>
                         <li className={styles.role}>{this.props.role}</li>
@@ -31,7 +33,9 @@ class Experience extends React.Component<ExperienceProps, ExperienceState> {
                         </li>
                     </ul>
                 </header>
-                <main className={styles.content}>{this.props.children}</main>
+                <main className={withContent ? styles.contentWithContent : styles.content}>
+                    {this.props.children}
+                </main>
             </section>
         );
     };

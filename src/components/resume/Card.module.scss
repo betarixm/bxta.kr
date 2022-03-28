@@ -9,6 +9,11 @@
         margin: 0;
         display: flex;
     }
+
+    @include tablet {
+        width: calc(33% - 1.5rem);
+        height: 3rem;
+    }
 }
 
 .title {

@@ -15,10 +15,6 @@ interface IndexPageProps {}
 
 interface IndexPageState {}
 
-const ContactStyles = {
-    gridGap: "0.5rem !important",
-};
-
 class IndexPage extends React.Component<IndexPageProps, IndexPageState> {
     render = () => {
         const renderExperience = (exp: ExperienceData[]) =>
@@ -44,7 +40,7 @@ class IndexPage extends React.Component<IndexPageProps, IndexPageState> {
                 <main className={styles.content}>
                     <div className={styles.container}>
                         <div className={styles.inner}>
-                            <div className={styles.col}>
+                            <div className={styles.colMain}>
                                 <Category title={"Experiences"}>
                                     {renderExperience(Experiences)}
                                 </Category>
@@ -61,7 +57,7 @@ class IndexPage extends React.Component<IndexPageProps, IndexPageState> {
                                     </CardList>
                                 </Category>
                             </div>
-                            <div className={styles.col}>
+                            <div className={styles.colSub}>
                                 <Category title={"Education"}>
                                     {renderExperience(Educations)}
                                 </Category>
