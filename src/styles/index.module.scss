@@ -77,3 +77,10 @@ body {
 
 .content {
 }
+
+.contact {
+    grid-gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    color: darken($color-text-gray, 30);
+}

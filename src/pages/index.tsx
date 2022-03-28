@@ -62,13 +62,7 @@ class IndexPage extends React.Component<IndexPageProps, IndexPageState> {
                                     {renderExperience(Educations)}
                                 </Category>
                                 <Category title={"Contact"}>
-                                    <main
-                                        style={{
-                                            gridGap: "0.5rem",
-                                            display: "flex",
-                                            flexDirection: "column",
-                                        }}
-                                    >
+                                    <main className={styles.contact}>
                                         {Contacts.map((c) => (
                                             <section>
                                                 {c.indicator} {c.content}
