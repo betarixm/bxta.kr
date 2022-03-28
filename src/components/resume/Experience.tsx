@@ -15,7 +15,7 @@ class Experience extends React.Component<ExperienceProps, ExperienceState> {
 
         return (
             <section className={styles.container}>
-                <header className={withContent ? styles.titleWithContent : styles.content}>
+                <header className={`${styles.title} ${withContent ? styles.withContent : ""}`}>
                     <h2>{this.props.title}</h2>
                     <ul className={styles.metadata}>
                         <li className={styles.role}>{this.props.role}</li>
@@ -33,7 +33,7 @@ class Experience extends React.Component<ExperienceProps, ExperienceState> {
                         </li>
                     </ul>
                 </header>
-                <main className={withContent ? styles.contentWithContent : styles.content}>
+                <main className={`${styles.content} ${withContent ? styles.withContent : ""}`}>
                     {this.props.children}
                 </main>
             </section>
