@@ -18,7 +18,8 @@
 
 .title {
     h3 {
-        font-size: $text-base-font-size;
+        font-size: $text-sm-font-size;
+        font-weight: 600;
         line-height: $text-base-line-height;
     }
 }
