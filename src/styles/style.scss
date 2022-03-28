@@ -105,6 +105,26 @@ $breakpoint-desktop: 1024px;
     }
 }
 
+@mixin containerMixin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: $content-width;
+    padding: $padding-large 0;
+
+    .inner {
+        max-width: 92%;
+        @include media(desktop, print) {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    @include print {
+        max-width: 100%;
+    }
+}
+
 * {
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
         "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",

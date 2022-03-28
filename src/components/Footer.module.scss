@@ -1,0 +1,41 @@
+@import "src/styles/style.scss";
+
+footer {
+    width: 100vw;
+    background-color: desaturate(darken($color-primary, 40), 80);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    @include containerMixin;
+    padding: 3rem 0 6rem 0;
+
+    .inner {
+        flex-direction: column;
+    }
+
+    @include print {
+        display: none;
+    }
+}
+
+.title {
+    color: white;
+    opacity: 0.7;
+    font-weight: 500;
+    font-size: $text-base-font-size;
+    line-height: $text-base-line-height;
+    width: 100vw;
+    margin-bottom: 0.25rem;
+}
+
+.content {
+    color: white;
+    opacity: 0.5;
+    font-weight: 300;
+    font-size: $text-base-font-size;
+    line-height: $text-base-line-height;
+    width: 100vw;
+}

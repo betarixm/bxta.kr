@@ -1,4 +1,5 @@
 import * as React from "react";
+import Layout from "../components/Layout";
 import { Card, CardList, Category, Entry, Experience } from "../components/resume";
 import {
     Experience as ExperienceData,
@@ -29,7 +30,7 @@ class IndexPage extends React.Component<IndexPageProps, IndexPageState> {
             ));
 
         return (
-            <div className={styles.wrapper}>
+            <Layout>
                 <header className={styles.title}>
                     <div className={styles.container}>
                         <div className={styles.inner}>
@@ -74,7 +75,7 @@ class IndexPage extends React.Component<IndexPageProps, IndexPageState> {
                         </div>
                     </div>
                 </main>
-            </div>
+            </Layout>
         );
     };
 }
