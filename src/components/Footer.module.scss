@@ -3,16 +3,16 @@
 footer {
     width: 100vw;
     background-color: desaturate(darken($color-primary, 40), 80);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
 }
 
 .container {
     @include containerMixin;
     padding: 3rem 0 6rem 0;
-
+    display: block;
+    margin: 0 auto;
     .inner {
+        margin: 0 auto;
         flex-direction: column;
     }
 
@@ -27,7 +27,6 @@ footer {
     font-weight: 500;
     font-size: $text-base-font-size;
     line-height: $text-base-line-height;
-    width: $content-width;
     margin-bottom: 0.25rem;
 }
 
@@ -37,5 +36,4 @@ footer {
     font-weight: 300;
     font-size: $text-base-font-size;
     line-height: $text-base-line-height;
-    width: $content-width;
 }
