@@ -27,7 +27,7 @@ footer {
     font-weight: 500;
     font-size: $text-base-font-size;
     line-height: $text-base-line-height;
-    width: 100vw;
+    width: $content-width;
     margin-bottom: 0.25rem;
 }
 
@@ -37,5 +37,5 @@ footer {
     font-weight: 300;
     font-size: $text-base-font-size;
     line-height: $text-base-line-height;
-    width: 100vw;
+    width: $content-width;
 }
