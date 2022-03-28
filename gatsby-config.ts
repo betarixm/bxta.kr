@@ -9,6 +9,7 @@ const config: GatsbyConfig = {
         "gatsby-plugin-sass",
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-mdx",
+        "gatsby-plugin-remove-serviceworker",
         {
             resolve: "gatsby-source-filesystem",
             options: {
