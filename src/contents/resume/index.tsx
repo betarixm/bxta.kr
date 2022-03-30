@@ -25,7 +25,7 @@ export const Experiences: Experience[] = [
                 title: "Dreamhack",
                 tags: ["Jira", "Confluence", "Docker", "Flask"],
                 content:
-                    "Wrote and inspected of content for Dreamhack Enterprise, including a problem to help understand HTTP and vulnerabilities that may appear during file management. " +
+                    "Wrote and inspected of content for Dreamhack Enterprise, including problems to help understand HTTP and file management. " +
                     "Created a problem for Dreamhack CTF, which could be solved by understanding UUID1 and SSTI. ",
             },
         ],
@@ -39,7 +39,7 @@ export const Experiences: Experience[] = [
                 title: "Security Audit",
                 tags: ["REDACTED"],
                 content:
-                    "Simply analyzed the vulnerability of the Sellerhub, contributing to the most vulnerabilities among the team. ",
+                    "Simply analyzed the vulnerability of the Sellerhub, finding the most vulnerabilities in our team. ",
             },
         ],
     },
@@ -68,7 +68,7 @@ export const Experiences: Experience[] = [
                 title: "Media Director",
                 tags: ["OBS", "After Effect", "Premiere Pro", "Photoshop", "Illustrator"],
                 content:
-                    "As a media director, not only create artworks but also managing live broadcasting system for seminars. ",
+                    "As a media director, not only created artworks but also managed live broadcasting system for seminars. ",
             },
         ],
     },
@@ -100,7 +100,7 @@ export const Experiences: Experience[] = [
                 title: "Infrastructure Maintainer",
                 tags: ["Linux", "Github Actions", "Docker", "Django", "Flask", "React", "Vue"],
                 content:
-                    "Maintenance of pages necessary for PLUS, from bug fixes to developing new features. " +
+                    "In charge of maintaining PLUS's infrastructure, from bug fixes to developing new features. " +
                     "Increased development productivity by introducing CI/CD pipeline.",
             },
         ],
@@ -114,13 +114,13 @@ export const Experiences: Experience[] = [
                 title: "Establish the Task Pipeline",
                 tags: ["Agile", "Notion", "Google Groups", "Google Calendar"],
                 content:
-                    "Built a pipeline for content creation, inspired by Agile. Successfully adopted an agile process and collaborating tools among group members.",
+                    "Built a pipeline for content creation, inspired by Agile. Successfully adopted an agile culture and collaborating tools among members.",
             },
             {
                 title: "Infrastructure Maintainer",
                 tags: ["Linux", "RTMP", "React", "Filming"],
                 content:
-                    "Managed not only filming equipment and studios, but also all the equipment of the broadcasting station, including computers and servers. " +
+                    "Managed not only filming equipment and studios, but also all the equipment of the broadcasting station, including servers. " +
                     "Constructed RTMP-based two-way live broadcasting system for POSTECH-KAIST Science War.",
             },
             {
